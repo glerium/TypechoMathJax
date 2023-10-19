@@ -51,6 +51,9 @@ class TypechoMathJax_Plugin implements Typecho_Plugin_Interface
                 var elements = document.getElementsByName("tex_font_size");
                 var input = elements[0];
                 input.value = parseInt(input.value);
+                if(input.value == "NaN") {
+                    input.value = 0;
+                }
             }
             </script>
         ';
