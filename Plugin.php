@@ -50,11 +50,7 @@ class TypechoMathJax_Plugin implements Typecho_Plugin_Interface
             function removeLeadingZeros() {
                 var elements = document.getElementsByName("tex_font_size");
                 var input = elements[0];
-                var value = input.value;
-                if (value != "0") {
-                    value = value.replace(/^0+/, "");
-                    input.value = value;
-                }
+                input.value = parseInt(input.value);
             }
             </script>
         ';
