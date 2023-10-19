@@ -1,0 +1,2 @@
+# TypechoMathJax
+一款用于Typecho的MathJax插件
